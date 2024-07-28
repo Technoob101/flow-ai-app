@@ -9,7 +9,10 @@ function App() {
     <>
       <div className='sidebar'>
         <Nav />
-          <h1>Hello, human :-&#41;</h1>
+          <div className='openText'>
+            <h1>Hello, human :-&#41;</h1>
+            <p><span className='techText'>&#40; </span>Ask me anything...<span className='techText'> &#41; :</span></p>
+          </div>
       </div>
     </>
   )
