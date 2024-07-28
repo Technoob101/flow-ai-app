@@ -2,11 +2,31 @@
     "manifest_version": 3,
     "name": "Flow.AI",
     "version": "1.0.0",
-    "action": { "default_popup": "index.html" },
+    "action": {},
+    "permissions": [
+        "activeTab", 
+        "scripting", 
+        "background",
+		"contextMenus",
+		"bookmarks",
+		"tabs",
+		"storage",
+		"history"
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["src/fonts/*"],
+          "matches": ["<all_urls>"]
+        }
+    ],
     "content_scripts": [
         {
             "js": ["src/content.jsx"],
             "matches": ["https://en.wikipedia.org/wiki/Wiki"]
         }
-    ]
+    ],
+    "background": {
+        "service_worker": "src/background.js",
+        "type": "module"
+    }
 }

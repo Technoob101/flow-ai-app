@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Nav from './components/Nav'
 import './App.css'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       <div className='sidebar'>
-        Hello humane
+        <Nav />
+          <h1>Hello, human :-&#41;</h1>
       </div>
     </>
   )

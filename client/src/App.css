@@ -2,3 +2,7 @@
   padding: 0;
 }
 
+.sidebar h1 {
+  font-family: 'NothingFont', Helvetica;
+  border: none;
+}
