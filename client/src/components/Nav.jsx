@@ -2,6 +2,7 @@ import React from 'react'
 import './Nav.css'
 
 function Nav() {
+  
   return (
     <nav className='navBar'>   
       <button className='navButton'>

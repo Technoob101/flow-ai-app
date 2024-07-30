@@ -1,0 +1,28 @@
+#crx-root .userprompt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px 0;
+}
+
+#crx-root .userprompt input {
+    width: 90%;
+    border: 0.5px solid #e1dfe5;
+    padding: 0.7rem 0.8rem;
+    font-size: 1rem;
+    color: #777;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#crx-root .userprompt input:focus {
+    border-color: #9f9f9f;
+    box-shadow: 0 0 10px rgba(159, 159, 159, 0.2);
+    outline: none; 
+}
+
+#crx-root .userprompt input::placeholder {
+    color: #9f9f9f;
+}

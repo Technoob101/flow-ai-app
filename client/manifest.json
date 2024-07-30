@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Flow.AI",
     "version": "1.0.0",
-    "action": {},
+    "action": {"default_icon": "public/icons/flow-icon.png"},
     "permissions": [
         "activeTab", 
         "scripting", 
@@ -15,18 +15,14 @@
     ],
     "web_accessible_resources": [
         {
-          "resources": ["src/fonts/*", "src/assets/*"],
+          "resources": ["public/fonts/*", "public/assets/*"],
           "matches": ["<all_urls>"]
         }
     ],
     "content_scripts": [
         {
             "js": ["src/content.jsx"],
-            "matches": ["https://en.wikipedia.org/wiki/Wiki"]
+            "matches": ["https://www.apple.com/*"]
         }
-    ],
-    "background": {
-        "service_worker": "src/background.js",
-        "type": "module"
-    }
+    ]
 }

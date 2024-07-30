@@ -1,26 +1,33 @@
-.sidebar {
+#crx-root .sidebar {
   padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-.sidebar .openText {
+#crx-root .sidebar .openText {
   padding: 0.1rem 1.3rem;
 }
 
-.sidebar .openText h1 {
+#crx-root .sidebar .openText h1 {
   font-family: 'NothingFont', Helvetica;
   border: none;
-  margin: 0;
+  margin: 1rem 0 0.25rem;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  padding: 0;
 }
 
-.sidebar .openText p {
+#crx-root .sidebar .openText p {
   font-family: 'UniversRegular', Helvetica;
   border: none;
-  padding: 0.3rem 0;
+  padding: 0 0;
   margin: 0;
   color: #8e8e93;
+  font-size: 1rem;
 }
 
-.sidebar .openText .techText {
+#crx-root .sidebar .openText .techText {
   font-family: 'NothingFont', Helvetica;
   color: white; 
   text-shadow: 
@@ -28,4 +35,11 @@
     0.5px -0.5px 0 #000,
     -0.5px  0.5px 0 #000,
     0.5px  0.5px 0 #000;
+}
+
+#crx-root .funcbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 }

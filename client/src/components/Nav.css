@@ -1,4 +1,4 @@
-.navBar {
+#crx-root .navBar {
     border-bottom: 1px solid rgb(216, 216, 220);
     padding: 0.5rem 0.75rem;
     display: flex;
@@ -6,13 +6,14 @@
     justify-content: space-between;
 }
 
-.navBar .navButton {
+#crx-root .navBar .navButton {
     background-color: transparent; 
     border: none; 
     box-shadow: none; 
     outline: none;
+    cursor: pointer;
 }
 
-.navBar .navButton img {
+#crx-root .navBar .navButton img {
     width: 20px;
 }
