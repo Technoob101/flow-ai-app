@@ -7,14 +7,14 @@
 
 @font-face {
   font-family: 'UniversBold';
-  src: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/fonts/UniversBold.ttf') format('truetype');
+  src: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/fonts/UniversBold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'UniversRegular';
-  src: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/fonts/UniversRegular.ttf') format('truetype');
+  src: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/fonts/UniversRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,6 +32,7 @@
   -webkit-backdrop-filter: blur(10px); 
   z-index: 100000;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 

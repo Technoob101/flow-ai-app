@@ -3,26 +3,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 90px 0;
+    margin: 40px 0;
 }
 
-#crx-root .userprompt input {
+#crx-root .userprompt .inputwrap {
     width: 90%;
     border: 0.5px solid #e1dfe5;
-    padding: 0.7rem 0.8rem;
+    background-color: white;
+    padding: 0.6rem 0.88rem;
     font-size: 1rem;
-    color: #777;
-    border-radius: 8px;
+    color: #8e8e93;
+    border-radius: 1.5rem;
     box-sizing: border-box;
     transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#crx-root .userprompt input:focus {
-    border-color: #9f9f9f;
-    box-shadow: 0 0 10px rgba(159, 159, 159, 0.2);
-    outline: none; 
+#crx-root .userprompt .inputwrap .sendprompt {
+    font-family: "NothingFont", Helvetica;
+    font-size: 1rem;
+    color: black;
+    margin-left: 8px;
+    margin-top: 1.3px;
+    padding: 2px 6.109px;
 }
 
-#crx-root .userprompt input::placeholder {
-    color: #9f9f9f;
+#crx-root .userprompt .inputwrap .sendprompt:hover {
+    background-color: rgb(54, 54, 56);
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 2px 6.109px;
+}
+
+#crx-root .userprompt .inputwrap textarea {
+    box-sizing: border-box;
+    font-family: "UniversRegular", Helvetica;
+    font-size: 1rem;
+    color: black;
+    width: 100%;
+    outline: none;
+    resize: none;
+    display: flex;
+    border: none;
+    max-height: 88px;
+    margin-bottom: 3px;
 }
