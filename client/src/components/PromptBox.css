@@ -17,20 +17,21 @@
     cursor: pointer;
     margin: 0.3rem 0;
     cursor: pointer;
+    background-color: rgb(209, 209, 214);
 }
 
-#crx-root .internet {
+#crx-root .internet:hover {
     background-color: #3b0bff;
 }
 
-#crx-root .web {
+#crx-root .web:hover {
     background-color: #fd850a;
 }
 
-#crx-root .youtube {
+#crx-root .youtube:hover {
     background-color: #f73e77;
 }
 
-#crx-root .action {
+#crx-root .action:hover {
     background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
 }

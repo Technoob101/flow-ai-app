@@ -1,14 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import App from './App.jsx';
+import Chat from './components/Chat.jsx';
+import './index.css';
 
-const root = document.createElement("div");
-root.id = "crx-root";
+const root = document.createElement('div');
+root.id = 'crx-root';
 document.body.appendChild(root);
 
 ReactDOM.createRoot(root).render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-)
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/*" element={<App />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);

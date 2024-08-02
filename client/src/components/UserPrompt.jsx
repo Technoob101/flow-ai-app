@@ -1,9 +1,12 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import './UserPrompt.css'
 
 function UserPrompt() {
   
+  const [value, setValue] = useState('');
+
   useEffect(() => {
     const textarea = document.querySelector('textarea');
     if (textarea) {
@@ -25,8 +28,10 @@ function UserPrompt() {
   return (
     <div className='userprompt'>
         <div className='inputwrap'>
-          <textarea rows='1' placeholder='ex: latest llm research..'></textarea>
-          <button className='sendprompt'>=&gt;</button>
+          <textarea rows='1' placeholder='ex: latest llm research..' onChange={(e) => setValue(e.target.value)}></textarea>
+          <Link to={'/chat'}>
+            <button className='sendprompt'>=&gt;</button>
+          </Link>
         </div>
     </div>
   )

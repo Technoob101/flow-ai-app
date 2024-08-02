@@ -1,14 +1,17 @@
 #crx-root .userprompt {
+    position: fixed;
+    bottom: 60px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 0;
+    margin: 0;
 }
 
 #crx-root .userprompt .inputwrap {
     width: 90%;
-    border: 0.5px solid #e1dfe5;
+    border: 0.5px solid rgb(54, 54, 56);
+    outline: 5px solid #e8e8e8;
     background-color: white;
     padding: 0.6rem 0.88rem;
     font-size: 1rem;
