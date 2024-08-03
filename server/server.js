@@ -1,25 +1,41 @@
-const { GoogleGenerativeAI } = require("@google/generative-ai");
-const fs = require("fs");
-require('dotenv').config();
+const express = require('express');
+const app = express();
+const cors = require('cors')
+app.use(cors())
+app.use(express.json())
+require('dotenv').config()
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEN_AI_KEY);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const { GoogleGenerativeAI } = require('@google/generative-ai')
 
-async function generateSummary() {
-    const prompt = "Please summarize the content of this page extension terminology short and easy for me to understand each concept";
-    const image = {
-        inlineData: {
-            data: Buffer.from(fs.readFileSync("screenshot.jpg")).toString("base64"),
-            mimeType: "image/png",
-        },
-    };
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEN_AI_KEY)
+const PORT = 3000;
 
+app.post('/gemini', async (req, res) => {
     try {
-        const result = await model.generateContent([prompt, image]);
-        console.log(result.response.text());
+      console.log(req.body.history)
+      console.log(req.body.message)
+      
+      //get gemini model
+      const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"})
+      
+      const chat = model.startChat({ 
+        history: req.body.history
+      })
+      
+      const msg = req.body.message
+      const result = await chat.sendMessage(msg)
+      const response = result.response
+      const text = response.text()
+      
+      //send response back to request
+      /* res.send(text) */
+      
     } catch (error) {
-        console.error("Error generating summary:", error); 
+        console.error('Server error:', error)
+        res.status(500).send('Internal Server Error')
     }
-}
+})
 
-generateSummary();
+app.listen(PORT, () => {
+    console.log('App listening on port ' + PORT);
+});

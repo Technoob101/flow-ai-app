@@ -6,6 +6,36 @@ import './UserPrompt.css'
 function UserPrompt() {
   
   const [value, setValue] = useState('');
+  const [ chatHistory, setChatHistory ] = useState([])
+  const [error, setError] = useState('');
+
+
+  async function getResponse() {
+    if(!value) {
+      setError("**error please enter prompt!! ")
+      return
+    }
+  //send object to post request
+    try {
+      const options = {
+        method: 'POST',
+        body: JSON.stringify({
+          history: chatHistory,
+          message: value
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+      const response = await fetch('http://localhost:3000/gemini', options)
+      const data = await response.text()
+      console.log(data)
+      setValue("")
+      } catch(error) {
+          console.error(error)
+          setError("**error something wrong!!")
+        }
+    }
 
   useEffect(() => {
     const textarea = document.querySelector('textarea');
@@ -30,7 +60,7 @@ function UserPrompt() {
         <div className='inputwrap'>
           <textarea rows='1' placeholder='ex: latest llm research..' onChange={(e) => setValue(e.target.value)}></textarea>
           <Link to={'/chat'}>
-            <button className='sendprompt'>=&gt;</button>
+            <button className='sendprompt' onClick={ getResponse }>=&gt;</button>
           </Link>
         </div>
     </div>
