@@ -20,8 +20,16 @@
     background-color: rgb(209, 209, 214);
 }
 
+#crx-root .internet {
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm-hover.JPG');
+    background-size: cover;
+    background-position: center center;
+}
+
 #crx-root .internet:hover {
-    background-color: #3b0bff;
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm.JPG');
+    background-size: cover;
+    background-position: center center;
 }
 
 #crx-root .web:hover {
@@ -35,3 +43,5 @@
 #crx-root .action:hover {
     background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
 }
+
+

@@ -5,10 +5,10 @@ import Nav from './Nav'
 
 function Chat() {
   return (
-    <div>
+    <div className='response'>
         <Nav />
         <Link to={'/*'}>
-            <button className='newButton'>new chat</button>
+            <button className='newButton'>new chat+</button>
         </Link>
         <h1>Hello</h1>
         <p>this is the result page</p>

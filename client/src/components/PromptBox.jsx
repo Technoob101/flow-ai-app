@@ -5,16 +5,15 @@ function PromptBox() {
   return (
     <div className='box-container'>
         <div className='promptbox internet'>
-          <p>Text</p>
         </div>
         <div className='promptbox web'>
-          <p>Text</p>
+          <p>Web Search</p>
         </div>
         <div className='promptbox youtube'>
-          <p>Text</p>
+          <p>Youtube</p>
         </div>
         <div className='promptbox action'>
-          <p>Text</p>
+          <p>Action</p>
         </div>
     </div>
   )

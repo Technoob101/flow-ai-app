@@ -14,6 +14,8 @@ function UserPrompt() {
     if(!value) {
       setError("**error please enter prompt!! ")
       return
+    } else {
+      setError("")
     }
   //send object to post request
     try {
@@ -56,13 +58,16 @@ function UserPrompt() {
   }, []);
   
   return (
-    <div className='userprompt'>
+    <div className='promptwrap'>
+      {error && <p className='error'>{error}</p>}
+      <div className='userprompt'>
         <div className='inputwrap'>
           <textarea rows='1' placeholder='ex: latest llm research..' onChange={(e) => setValue(e.target.value)}></textarea>
-          <Link to={'/chat'}>
+          {/* <Link to={'/chat'}> */}
             <button className='sendprompt' onClick={ getResponse }>=&gt;</button>
-          </Link>
+          {/* </Link> */}
         </div>
+      </div>
     </div>
   )
 }

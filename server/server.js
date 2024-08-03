@@ -10,6 +10,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai')
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEN_AI_KEY)
 const PORT = 3000;
 
+//normal chat history
 app.post('/gemini', async (req, res) => {
     try {
       console.log(req.body.history)
