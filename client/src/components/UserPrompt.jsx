@@ -3,42 +3,8 @@ import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './UserPrompt.css'
 
-function UserPrompt() {
+function UserPrompt({ value, setValue, getResponse, error, chatHistory, setChatHistory }) {
   
-  const [value, setValue] = useState('');
-  const [ chatHistory, setChatHistory ] = useState([])
-  const [error, setError] = useState('');
-
-
-  async function getResponse() {
-    if(!value) {
-      setError("**error please enter prompt!! ")
-      return
-    } else {
-      setError("")
-    }
-  //send object to post request
-    try {
-      const options = {
-        method: 'POST',
-        body: JSON.stringify({
-          history: chatHistory,
-          message: value
-        }),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }
-      const response = await fetch('http://localhost:3000/gemini', options)
-      const data = await response.text()
-      console.log(data)
-      setValue("")
-      } catch(error) {
-          console.error(error)
-          setError("**error something wrong!!")
-        }
-    }
-
   useEffect(() => {
     const textarea = document.querySelector('textarea');
     if (textarea) {
@@ -62,10 +28,10 @@ function UserPrompt() {
       {error && <p className='error'>{error}</p>}
       <div className='userprompt'>
         <div className='inputwrap'>
-          <textarea rows='1' placeholder='ex: latest llm research..' onChange={(e) => setValue(e.target.value)}></textarea>
-          {/* <Link to={'/chat'}> */}
+          <textarea rows='1' placeholder='ex: latest llm research..' onChange={(e) => setValue(e.target.value)}  value = {value}></textarea>
+          <Link to={'/chat'}>
             <button className='sendprompt' onClick={ getResponse }>=&gt;</button>
-          {/* </Link> */}
+          </Link> 
         </div>
       </div>
     </div>

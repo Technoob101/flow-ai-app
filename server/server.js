@@ -29,7 +29,7 @@ app.post('/gemini', async (req, res) => {
       const text = response.text()
       
       //send response back to request
-      /* res.send(text) */
+      res.send(text)
       
     } catch (error) {
         console.error('Server error:', error)

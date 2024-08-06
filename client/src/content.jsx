@@ -14,7 +14,6 @@ ReactDOM.createRoot(root).render(
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<App />} />
-        <Route path="/chat" element={<Chat />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

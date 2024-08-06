@@ -1,0 +1,67 @@
+#crx-root .response-wrap {
+    margin: 0.5rem 1.3rem 0;
+    height: 75%;
+    overflow: auto;
+}
+
+#crx-root .newButton {
+    font-family: 'UniversRegular';
+    font-size: 1rem;
+    border: 1px solid #e8e8e8;
+    padding: 0 8.5px;
+    border-radius: 1rem;
+    color: #8e8e93;
+    margin: 0.75rem 0.75rem 0;
+}
+
+#crx-root .newButton:hover {
+    border: none;
+    background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
+    margin: 0.75rem 0.75rem 0;
+    color: #ffffff;
+    padding: 1px 9.5px;
+}
+
+#crx-root .search-result {
+    width: 100%;
+    height: 100%;
+}
+
+#crx-root .model-response {
+    margin: 0.5rem 0;
+}
+
+#crx-root .user-input {
+    font-family: 'UniversRegular';
+    font-size: 2rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+#crx-root .model-answer {
+    padding: 13px 14px;
+    border: 0.5px solid #e1dfe5;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 20px;
+    margin: 0.25rem 0;
+    font-family: 'UniversRegular';
+    color: #111111;
+}
+
+#crx-root .response-top .techText {
+    font-family: 'NothingFont', Helvetica;
+    color: white; 
+    font-size: 14px;
+    text-shadow: 
+      -0.5px -0.5px 0 #000,  
+      0.5px -0.5px 0 #000,
+      -0.5px  0.5px 0 #000,
+      0.5px  0.5px 0 #000;
+}
+
+#crx-root .response-top {
+    color: #8e8e93;
+    font-size: 14px;
+}
