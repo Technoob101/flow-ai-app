@@ -12,6 +12,7 @@ function App() {
   const [value, setValue] = useState('');
   const [ chatHistory, setChatHistory ] = useState([])
   const [error, setError] = useState('');
+  const [select, setSelect] = useState('');
  
   async function getResponse() {
     if(!value) {
@@ -20,7 +21,11 @@ function App() {
     } else {
       setError("")
     }
-  //send object to post request
+
+    //url path
+    let url = 'http://localhost:3000/gemini'
+
+    //send object to post request
     try {
       const options = {
         method: 'POST',
@@ -33,7 +38,7 @@ function App() {
         }
       }
       console.log('sent')
-      const response = await fetch('http://localhost:3000/gemini', options)
+      const response = await fetch(url, options)
       console.log('recieve')
       const data = await response.text()
       console.log(data)
@@ -68,7 +73,10 @@ function App() {
               <p><span className='techText'>&#40; </span>Ask me anything...<span className='techText'> &#41; :</span></p>
             </div>
             <div className='funcbox'>
-              <PromptBox />
+              <PromptBox 
+                select={select}
+                setSelect={setSelect}
+              />
             </div>
             <UserPrompt 
               value={value}

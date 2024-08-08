@@ -8,9 +8,6 @@
 }
 
 #crx-root .promptbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 90%;
     height: 115px;
     border-radius: 20px;
@@ -20,28 +17,92 @@
     background-color: rgb(209, 209, 214);
 }
 
-#crx-root .internet {
+#crx-root .web {
     background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm-hover.JPG');
     background-size: cover;
     background-position: center center;
 }
 
-#crx-root .internet:hover {
+#crx-root .web-select {
     background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm.JPG');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .web:hover {
-    background-color: #fd850a;
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm.JPG');
+    background-size: cover;
+    background-position: center center;
+}
+
+#crx-root .internet {
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/internet-hover.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#crx-root .internet:hover {
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/internet.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#crx-root .internet-select {
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/internet.png');
+    background-size: cover;
+    background-position: center center;
 }
 
 #crx-root .youtube:hover {
     background-color: #f73e77;
 }
 
+#crx-root .action {
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/action-hover.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+
 #crx-root .action:hover {
-    background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/action.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#crx-root .action-select {
+    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/action.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#crx-root .checkbox {
+    background-color: transparent;
+    width: 27px;
+    height: 14px;
+    border: 1px solid #f5f5f7;
+    margin: 0.63rem 0.5rem;
+    border-radius: 1rem;
+}
+
+#crx-root .checkbox img{
+    display: none;
+}
+
+#crx-root .checkbox-select {
+    background-color: rgb(200, 242, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 14px;
+    border: 1px solid #111111;
+    margin: 0.63rem 0.5rem;
+    border-radius: 1rem;
+}
+
+#crx-root .checkbox-select img {
+    width: 15px;
 }
 
 

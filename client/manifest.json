@@ -15,7 +15,7 @@
     ],
     "web_accessible_resources": [
         {
-          "resources": ["public/fonts/*", "public/assets/*", "src/assets/*", "src/assets/testbox.JPG", "src/assets/websumm.jpg", "src/assets/websumm-hover.jpg"],
+          "resources": ["public/fonts/*", "public/assets/*", "src/assets/*", "src/assets/testbox.JPG", "src/assets/websumm.jpg", "src/assets/websumm-hover.jpg", "src/assets/action.png", "src/assets/action-hover.png", "src/assets/internet.png", "src/assets/internet-hover.png"],
           "matches": ["<all_urls>"]
         }
     ],
