@@ -18,60 +18,73 @@
 }
 
 #crx-root .web {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm-hover.JPG');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/websumm-hover.JPG');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .web-select {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm.JPG');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/websumm.JPG');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .web:hover {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/websumm.JPG');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/websumm.JPG');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .internet {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/internet-hover.png');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/internet-hover.png');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .internet:hover {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/internet.png');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/internet.png');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .internet-select {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/internet.png');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/internet.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+#crx-root .youtube {
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/youtube-hover.JPG');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .youtube:hover {
-    background-color: #f73e77;
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/youtube.JPG');
+    background-size: cover;
+    background-position: center center;
+}
+#crx-root .youtube-select {
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/youtube.JPG');
+    background-size: cover;
+    background-position: center center;
 }
 
 #crx-root .action {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/action-hover.png');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/action-hover.png');
     background-size: cover;
     background-position: center center;
 }
 
 
 #crx-root .action:hover {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/action.png');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/action.png');
     background-size: cover;
     background-position: center center;
 }
 
 #crx-root .action-select {
-    background-image: url('chrome-extension://paeabjbkfehnfddnjjfkoocekigifili/src/assets/action.png');
+    background-image: url('chrome-extension://eadkmjkaoialogbcgnhimpnbmflnoocl/src/assets/action.png');
     background-size: cover;
     background-position: center center;
 }

@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-const URL = "https://developer.chrome.com/docs/extensions/get-started";
+const URL = "https://serpapi.com/";
 
 (async () => {
   // Create a browser instance

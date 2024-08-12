@@ -39,7 +39,7 @@ function PromptBox({ select, setSelect }) {
           </div>
         </div>
         <div 
-          className='promptbox youtube'
+          className={`promptbox ${select === 'youtube' ? 'youtube-select' : 'youtube'}`}
           onClick={() => {
             if (select === '') {
               setSelect('youtube');

@@ -2,6 +2,7 @@
     margin: 0.5rem 1.3rem 0;
     height: 75%;
     overflow: auto;
+    max-width: 100%;
 }
 
 #crx-root .newButton {
@@ -36,6 +37,12 @@
     font-size: 2rem;
     font-weight: 400;
     color: #111111;
+    max-height: 150px;
+    max-width: 100%;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: pre-wrap; 
+    overflow: auto;
 }
 
 #crx-root .model-answer {
@@ -48,20 +55,51 @@
     margin: 0.25rem 0;
     font-family: 'UniversRegular';
     color: #111111;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-#crx-root .response-top .techText {
+/* New styles for formatting */
+#crx-root .model-answer p {
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+#crx-root .model-answer strong {
+    font-weight: 700;
+    font-family: 'UniversBold';
+}
+
+#crx-root .model-answer p strong {
+    font-weight: 700;
+    font-family: 'UniversBold';
+}
+
+#crx-root .model-answer h1,
+#crx-root .model-answer h2,
+#crx-root .model-answer h3,
+#crx-root .model-answer h4,
+#crx-root .model-answer h5,
+#crx-root .model-answer h6 {
+    margin: 0.5em 0;
+    font-weight: 700;
+    font-family: 'UniversRegular';
+}
+
+#crx-root .model-answer h1 { font-size: 1.8em; }
+#crx-root .model-answer h2 { font-size: 1.5em; }
+#crx-root .model-answer h3 { font-size: 1.3em; }
+#crx-root .model-answer h4 { font-size: 1.2em; }
+#crx-root .model-answer h5 { font-size: 1.1em; }
+#crx-root .model-answer h6 { font-size: 1em; }
+
+#crx-root .techText {
     font-family: 'NothingFont', Helvetica;
     color: white; 
-    font-size: 14px;
     text-shadow: 
       -0.5px -0.5px 0 #000,  
       0.5px -0.5px 0 #000,
       -0.5px  0.5px 0 #000,
       0.5px  0.5px 0 #000;
-}
-
-#crx-root .response-top {
-    color: #8e8e93;
-    font-size: 14px;
-}
+  }

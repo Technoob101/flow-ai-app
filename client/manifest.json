@@ -15,14 +15,14 @@
     ],
     "web_accessible_resources": [
         {
-          "resources": ["public/fonts/*", "public/assets/*", "src/assets/*", "src/assets/testbox.JPG", "src/assets/websumm.jpg", "src/assets/websumm-hover.jpg", "src/assets/action.png", "src/assets/action-hover.png", "src/assets/internet.png", "src/assets/internet-hover.png"],
+          "resources": ["public/fonts/*", "public/assets/*", "src/assets/*", "src/assets/testbox.JPG", "src/assets/websumm.jpg", "src/assets/websumm-hover.jpg", "src/assets/action.png", "src/assets/action-hover.png", "src/assets/internet.png", "src/assets/internet-hover.png", "src/assets/youtube.JPG", "src/assets/youtube-hover.JPG"],
           "matches": ["<all_urls>"]
         }
     ],
     "content_scripts": [
         {
             "js": ["src/content.jsx"],
-            "matches": ["https://www.apple.com/*"]
+            "matches": ["<all_urls>"]
         }
     ]
 }
